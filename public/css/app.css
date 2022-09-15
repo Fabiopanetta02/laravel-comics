@@ -1,0 +1,244 @@
+/* Common */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Greta Sans Condensed Bold", "Greta Sans Bold", Arial, sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col-2 {
+  width: 16.6666666667%;
+  margin-top: 2rem;
+}
+
+/* Variables */
+/* Header */
+#site_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  padding-top: 2rem;
+  /* logo */
+}
+#site_header .logo {
+  padding-bottom: 1rem;
+}
+#site_header ul {
+  display: flex;
+  list-style: none;
+}
+#site_header ul li {
+  padding: 0 1rem;
+  font-size: 0.75rem;
+}
+#site_header ul li a {
+  text-decoration: none;
+  color: #1c1c1c;
+}
+#site_header ul li:hover {
+  color: #0282f9;
+}
+#site_header ul .list_active {
+  color: #0282f9;
+}
+#site_header ul .list_active::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 5px;
+  background-color: #0282f9;
+  margin: auto;
+  margin-top: 2rem;
+}
+#site_header .search {
+  display: flex;
+  align-self: center;
+}
+#site_header .search li {
+  text-align: end;
+}
+#site_header .search .list_active {
+  color: #1c1c1c;
+}
+#site_header .search .list_active::after {
+  content: "";
+  display: block;
+  width: 70px;
+  height: 2px;
+  background-color: #0282f9;
+  margin: auto;
+  margin-top: 0.3rem;
+}
+
+/* Main */
+#site_main {
+  background-color: #1c1c1c;
+  /* site_main_content */
+  /* cards */
+}
+#site_main .jumbo {
+  background-image: url("../images/jumbotron.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 450px;
+}
+#site_main .site_main_content {
+  padding-bottom: 2rem;
+  position: relative;
+}
+#site_main .site_main_content .btn-current,
+#site_main .site_main_content .btn {
+  background-color: #0282f9;
+  padding: 0.75rem;
+  text-align: center;
+}
+#site_main .site_main_content .btn-current a,
+#site_main .site_main_content .btn a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+#site_main .site_main_content .btn {
+  margin: 5rem auto 0;
+  width: 150px;
+}
+#site_main .site_main_content .btn a {
+  font-size: 0.8rem;
+}
+#site_main .site_main_content .btn-current {
+  position: absolute;
+  top: -20px;
+  left: 0;
+  width: 200px;
+}
+#site_main .site_main_content .thumb {
+  height: 200px;
+  padding: 1rem;
+}
+#site_main .site_main_content .thumb img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+  width: 100%;
+}
+#site_main .site_main_content .thumb h5 {
+  color: #fff;
+  padding-top: 1rem;
+}
+#site_main p {
+  color: #fff;
+}
+#site_main .cards {
+  background-color: #0282f9;
+  padding: 2rem 0;
+  display: flex;
+}
+#site_main .cards .container .card {
+  display: flex;
+  align-items: center;
+  margin-right: 2.5rem;
+}
+#site_main .cards .container .card img {
+  margin-right: 1rem;
+}
+#site_main .cards .container .card p {
+  font-size: 0.8rem;
+}
+
+/* Footer */
+#site_footer {
+  background-image: url("../img/footer-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: center;
+  /* informations */
+  /* socials */
+}
+#site_footer .informations {
+  display: flex;
+  justify-content: space-between;
+}
+#site_footer .informations .row {
+  padding: 2rem 0;
+  width: 40%;
+}
+#site_footer .informations .row .col-4 {
+  width: 33.3333333333%;
+}
+#site_footer .informations .row h3 {
+  color: #fff;
+  padding-bottom: 0.5rem;
+}
+#site_footer .informations .row .list_shop {
+  padding-top: 1rem;
+}
+#site_footer .informations .row ul {
+  list-style: none;
+}
+#site_footer .informations .row ul a {
+  color: #959577;
+  font-size: 0.7rem;
+  text-decoration: none;
+}
+#site_footer .informations .rights {
+  padding-top: 1rem;
+}
+#site_footer .informations .rights small {
+  color: #959577;
+  font-size: 0.7rem;
+}
+#site_footer .informations .rights small a {
+  text-decoration: none;
+  color: #0282f9;
+}
+#site_footer .informations .footer_logo {
+  background-image: url("../images/dc-logo-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 350px;
+  width: 500px;
+}
+#site_footer .socials {
+  background-color: #303030;
+  padding: 2rem 0;
+}
+#site_footer .socials .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#site_footer .socials .container .btn {
+  border: 1px solid #0282f9;
+  padding: 1rem;
+}
+#site_footer .socials .container .btn a {
+  text-decoration: none;
+  color: #fff;
+}
+#site_footer .socials .container .left_icons {
+  display: flex;
+  align-items: center;
+}
+#site_footer .socials .container .left_icons h4 {
+  color: #0282f9;
+  margin-right: 1rem;
+}
+#site_footer .socials .container .left_icons img {
+  padding: 0 0.5rem;
+}

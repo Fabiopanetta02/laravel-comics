@@ -10,18 +10,19 @@
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
 
         <!-- Styles -->
-        <style>
-        </style>
+        <link rel="stylesheet" href="{{asset('css/app.css')}}">
     </head>
     <body>
-        <header id="site_header"></header>
+        @include('partials.header')
         <!-- /#site_header -->
 
         <main id="site_main">
+            @include('partials.jumbotron')
+            @yield('content')
         </main>
         <!-- /#site_main -->
 
-        <footer></footer>
+        @include('partials.footer')
         <!-- /#site_footer -->
 
     </body>
