@@ -12,7 +12,7 @@
       </div>
       <div class="list">
         <ul>
-          <li><a href="#">CHARACTERS</a></li>
+          <li><a href="{{route('characters')}}">CHARACTERS</a></li>
           <li><a class="" href="{{route('home')}}">COMICS</a></li>
           <li><a href="{{ route('movies') }}">MOVIES</a></li>
           <li><a href="#">TV</a></li>

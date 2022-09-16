@@ -19,17 +19,19 @@ Route::get('/', function () {
 Route::get('/{id}', function ($id) {
     $albums = config('comics');
 
-    if (is_numeric($id) && $id >= 0 && $id < count($albums)) {
-        $album = $albums[$id];
-        //ddd($album);
-        return view('show', compact('album'));
-    } else {
+    if (!is_numeric($id) || $id < 0 || $id >= count($albums)) {
         abort(404);
     }
-
+    $album = $albums[$id];
+    return view('show', compact('album'));
 })->name('album');
 
 Route::get('/movies', function () {
 
     return view('movies');
 })->name('movies');
+
+Route::get('/characters', function () {
+
+    return view('characters');
+})->name('characters');
