@@ -162,7 +162,7 @@ body {
 
 /* Footer */
 #site_footer {
-  background-image: url("../img/footer-bg.jpg");
+  background-image: url("../images/footer-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position-x: center;
@@ -191,7 +191,7 @@ body {
   list-style: none;
 }
 #site_footer .informations .row ul a {
-  color: #959577;
+  color: #959595;
   font-size: 0.7rem;
   text-decoration: none;
 }
@@ -199,7 +199,7 @@ body {
   padding-top: 1rem;
 }
 #site_footer .informations .rights small {
-  color: #959577;
+  color: #959595;
   font-size: 0.7rem;
 }
 #site_footer .informations .rights small a {
@@ -211,7 +211,6 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 350px;
   width: 500px;
 }
 #site_footer .socials {

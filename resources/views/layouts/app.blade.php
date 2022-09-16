@@ -13,16 +13,16 @@
         <link rel="stylesheet" href="{{asset('css/app.css')}}">
     </head>
     <body>
-        @include('partials.header')
+        @include('includes.header')
         <!-- /#site_header -->
 
         <main id="site_main">
-            @include('partials.jumbotron')
+            @include('includes.jumbotron')
             @yield('content')
         </main>
         <!-- /#site_main -->
 
-        @include('partials.footer')
+        @include('includes.footer')
         <!-- /#site_footer -->
 
     </body>

@@ -8,6 +8,4 @@
     <h3>Movies</h3>
 </div>
 
-
-
 @endsection

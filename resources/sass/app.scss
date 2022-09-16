@@ -165,7 +165,7 @@ $color_bg_primary: #1c1c1c;
 /* Footer */
 
 #site_footer {
-    background-image: url("../img/footer-bg.jpg");
+    background-image: url("../images/footer-bg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position-x: center;
@@ -189,7 +189,7 @@ $color_bg_primary: #1c1c1c;
             ul {
                 list-style: none;
                 & a {
-                    color: #959577;
+                    color: #959595;
                     font-size: 0.7rem;
                     text-decoration: none;
                 }
@@ -199,7 +199,7 @@ $color_bg_primary: #1c1c1c;
             padding-top: 1rem;
 
             small {
-                color: #959577;
+                color: #959595;
                 font-size: 0.7rem;
 
                 & a {
@@ -213,7 +213,6 @@ $color_bg_primary: #1c1c1c;
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
-            height: 350px;
             width: 500px;
         }
     }
