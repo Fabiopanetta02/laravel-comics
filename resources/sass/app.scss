@@ -21,7 +21,6 @@ body {
     width: calc(100% / 6);
     margin-top: 2rem;
 }
-
 /* Variables */
 $color_primary: #0282f9;
 $color_bg_primary: #1c1c1c;
@@ -44,10 +43,9 @@ $color_bg_primary: #1c1c1c;
             a {
                 text-decoration: none;
                 color: #1c1c1c;
-            }
-
-            &:hover {
-                color: $color_primary;
+                &:hover {
+                    color: $color_primary;
+                }
             }
         }
         .list_active {
@@ -85,60 +83,61 @@ $color_bg_primary: #1c1c1c;
 }
 /* Main */
 #site_main {
-    background-color: $color_bg_primary;
     .jumbo {
         background-image: url("../images/jumbotron.jpg");
         background-repeat: no-repeat;
         background-size: cover;
         height: 450px;
     }
-
     /* site_main_content */
     .site_main_content {
+        background-color: $color_bg_primary;
         padding-bottom: 2rem;
-        position: relative;
+        .container {
+            position: relative;
 
-        .btn-current,
-        .btn {
-            background-color: $color_primary;
-            padding: 0.75rem;
-            text-align: center;
-            & a {
-                text-decoration: none;
-                color: #fff;
-                font-weight: bold;
+            .btn-current,
+            .btn {
+                background-color: $color_primary;
+                padding: 0.75rem;
+                text-align: center;
+                & a {
+                    text-decoration: none;
+                    color: #fff;
+                    font-weight: bold;
+                }
+            }
+            .btn {
+                margin: 5rem auto 0;
+                width: 150px;
+                & a {
+                    font-size: 0.8rem;
+                }
+            }
+            .btn-current {
+                position: absolute;
+                top: -20px;
+                left: 0;
+                width: 200px;
+            }
+            .thumb {
+                height: 200px;
+                padding: 1rem;
+                img {
+                    height: 100%;
+                    object-fit: cover;
+                    object-position: top;
+                    width: 100%;
+                }
+                h5 {
+                    color: #fff;
+                    padding-top: 1rem;
+                }
             }
         }
-        .btn {
-            margin: 5rem auto 0;
-            width: 150px;
-            & a {
-                font-size: 0.8rem;
-            }
+        p {
+            color: #fff;
         }
-        .btn-current {
-            position: absolute;
-            top: -20px;
-            left: 0;
-            width: 200px;
-        }
-        .thumb {
-            height: 200px;
-            padding: 1rem;
-            img {
-                height: 100%;
-                object-fit: cover;
-                object-position: top;
-                width: 100%;
-            }
-            h5 {
-                color: #fff;
-                padding-top: 1rem;
-            }
-        }
-    }
-    p {
-        color: #fff;
     }
     /* cards */
     .cards {
@@ -150,20 +149,18 @@ $color_bg_primary: #1c1c1c;
                 display: flex;
                 align-items: center;
                 margin-right: 2.5rem;
-
                 & img {
                     margin-right: 1rem;
                 }
                 & p {
                     font-size: 0.8rem;
+                    color: #fff;
                 }
             }
         }
     }
 }
-
 /* Footer */
-
 #site_footer {
     background-image: url("../images/footer-bg.jpg");
     background-repeat: no-repeat;
@@ -189,7 +186,7 @@ $color_bg_primary: #1c1c1c;
             ul {
                 list-style: none;
                 & a {
-                    color: #959595;
+                    color: #959577;
                     font-size: 0.7rem;
                     text-decoration: none;
                 }
@@ -197,11 +194,9 @@ $color_bg_primary: #1c1c1c;
         }
         .rights {
             padding-top: 1rem;
-
             small {
-                color: #959595;
+                color: #959577;
                 font-size: 0.7rem;
-
                 & a {
                     text-decoration: none;
                     color: $color_primary;
@@ -227,7 +222,6 @@ $color_bg_primary: #1c1c1c;
             .btn {
                 border: 1px solid $color_primary;
                 padding: 1rem;
-
                 & a {
                     text-decoration: none;
                     color: #fff;
@@ -236,7 +230,6 @@ $color_bg_primary: #1c1c1c;
             .left_icons {
                 display: flex;
                 align-items: center;
-
                 & h4 {
                     color: $color_primary;
                     margin-right: 1rem;
